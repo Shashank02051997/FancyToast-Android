@@ -78,7 +78,7 @@ FancyToast.makeText(yourContext, "I'm a custom Toast", duration, type, yourimage
 ## Contributing
 
 Please fork this repository and contribute back using
-[pull requests](https://github.com/Shashank02051997/CalcyLibrary-Android/pulls).
+[pull requests](https://github.com/Shashank02051997/FancyToast-Android/pulls).
 
 Any contributions, large or small, major features, bug fixes, are welcomed and appreciated
 but will be thoroughly reviewed .
