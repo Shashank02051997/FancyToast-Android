@@ -62,6 +62,7 @@ public class FancyToast extends Toast {
 
     public static Toast makeText(Context context, String message, int duration, int type, int ImageResource) {
         Toast toast = new Toast(context);
+        toast.setDuration(duration);
         View layout = LayoutInflater.from(context).inflate(R.layout.fancytoast_layout, null, false);
         TextView l1 = (TextView) layout.findViewById(R.id.toast_text);
         LinearLayout linearLayout = (LinearLayout) layout.findViewById(R.id.toast_type);
