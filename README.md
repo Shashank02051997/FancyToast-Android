@@ -1,10 +1,9 @@
+# FORK OF [Shashank02051997/FancyToast-Android](https://github.com/Shashank02051997/FancyToast-Android/).
+
 # FancyToast-Android
-[![platform](https://img.shields.io/badge/platform-Android-yellow.svg)](https://www.android.com)
-[![API](https://img.shields.io/badge/API-19%2B-brightgreen.svg?style=plastic)](https://android-arsenal.com/api?level=19)
-[![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg?style=flat-square)](https://www.apache.org/licenses/LICENSE-2.0.html)
-[![](https://jitpack.io/v/Shashank02051997/FancyToast-Android.svg)](https://jitpack.io/#Shashank02051997/FancyToast-Android)
-[![Android Arsenal]( https://img.shields.io/badge/Android%20Arsenal-FancyToast-green.svg?style=flat )]( https://android-arsenal.com/details/1/6357 )
+[![](https://jitpack.io/v/antoxa2584x/FancyToast-Android.svg)](https://jitpack.io/#antoxa2584x/FancyToast-Android)
 ## Prerequisites
+
 
 Add this in your root `build.gradle` file (**not** your module `build.gradle` file):
 
@@ -24,7 +23,7 @@ Add this to your module's `build.gradle` file (make sure the version matches the
 ```gradle
 dependencies {
 	...
-	compile 'com.github.Shashank02051997:FancyToast-Android:0.1.1'
+	compile 'com.github.antoxa2584x:FancyToast-Android:0.2'
 }
 ```
 ## Usage
