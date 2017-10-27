@@ -76,7 +76,7 @@ FancyToast.makeText(yourContext, "I'm a custom Toast", duration, type, yourimage
 **Please click the image below to enlarge.**
 
 
-<img src="">
+<img src="https://github.com/Shashank02051997/FancyToast-Android/blob/master/fancytoastcollage.png">
 
 
 ## Contributing
