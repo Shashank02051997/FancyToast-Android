@@ -30,16 +30,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v)
     {   if(v.getId()==R.id.button)
-        FancyToast.makeText(this,"This is Default Toast",FancyToast.LENGTH_LONG,FancyToast.DEFAULT).show();
+        FancyToast.makeText(this,"This is Default Toast",FancyToast.LENGTH_LONG,FancyToast.DEFAULT,true).show();
         else if(v.getId()==R.id.button2)
-        FancyToast.makeText(this,"Success Toast !",FancyToast.LENGTH_LONG,FancyToast.SUCCESS).show();
+        FancyToast.makeText(this,"Success Toast !",FancyToast.LENGTH_LONG,FancyToast.SUCCESS,true).show();
         else if(v.getId()==R.id.button3)
-        FancyToast.makeText(this,"This is an Error Toast",FancyToast.LENGTH_LONG,FancyToast.ERROR).show();
+        FancyToast.makeText(this,"This is an Error Toast",FancyToast.LENGTH_LONG,FancyToast.ERROR,true).show();
         else if(v.getId()==R.id.button4)
-        FancyToast.makeText(this,"Beware of dog",FancyToast.LENGTH_LONG,FancyToast.WARNING).show();
+        FancyToast.makeText(this,"Beware of dog",FancyToast.LENGTH_LONG,FancyToast.WARNING,true).show();
         else if(v.getId()==R.id.button5)
-        FancyToast.makeText(this,"Here is some Info for you",FancyToast.LENGTH_LONG,FancyToast.INFO).show();
+        FancyToast.makeText(this,"Here is some Info for you",FancyToast.LENGTH_LONG,FancyToast.INFO,true).show();
         else if(v.getId()==R.id.button6)
-        FancyToast.makeText(this,"This is Confusing Toast",FancyToast.LENGTH_LONG,FancyToast.CONFUSING).show();
+        FancyToast.makeText(this,"This is Confusing Toast",FancyToast.LENGTH_LONG,FancyToast.CONFUSING,false).show();
     }
 }

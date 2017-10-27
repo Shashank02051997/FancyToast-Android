@@ -36,7 +36,6 @@
         android:id="@+id/imageView4"
         android:layout_width="28dp"
         android:layout_height="28dp"
-        android:layout_marginTop="0dp"
         android:src="@drawable/androidicon"
         android:layout_alignParentTop="true"
         android:layout_alignEnd="@+id/toast_type" />
