@@ -54,4 +54,21 @@
         android:layout_alignBottom="@+id/button5"
         android:layout_alignParentEnd="true"
         android:text="Confusing" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button"
+        android:layout_below="@+id/button4"
+        android:layout_marginTop="23dp"
+        android:text="Custom" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button5"
+        android:layout_alignTop="@+id/button7"
+        android:text="Android" />
 </RelativeLayout>

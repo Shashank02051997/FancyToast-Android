@@ -9,7 +9,7 @@ import android.widget.Toast;
 import com.shashank.sony.fancytoastlib.FancyToast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    Button b1,b2,b3,b4,b5,b6;
+    Button b1,b2,b3,b4,b5,b6,b7,b8;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,12 +20,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         b4=(Button) findViewById(R.id.button4);
         b5=(Button) findViewById(R.id.button5);
         b6=(Button) findViewById(R.id.button6);
+        b7=(Button) findViewById(R.id.button7);
+        b8=(Button) findViewById(R.id.button8);
         b1.setOnClickListener(this);
         b2.setOnClickListener(this);
         b3.setOnClickListener(this);
         b4.setOnClickListener(this);
         b5.setOnClickListener(this);
         b6.setOnClickListener(this);
+        b7.setOnClickListener(this);
+        b8.setOnClickListener(this);
     }
     @Override
     public void onClick(View v)
@@ -41,5 +45,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         FancyToast.makeText(this,"Here is some Info for you",FancyToast.LENGTH_LONG,FancyToast.INFO,true).show();
         else if(v.getId()==R.id.button6)
         FancyToast.makeText(this,"This is Confusing Toast",FancyToast.LENGTH_LONG,FancyToast.CONFUSING,false).show();
-    }
+        else if(v.getId()==R.id.button7)
+        FancyToast.makeText(this,"This is Custom Toast",FancyToast.LENGTH_LONG,FancyToast.CONFUSING,R.drawable.ic_android_black_24dp).show();
+        else if(v.getId()==R.id.button8)
+        FancyToast.makeText(this,"This is a Success Toast",FancyToast.LENGTH_LONG,FancyToast.SUCCESS,false).show();    }
 }
