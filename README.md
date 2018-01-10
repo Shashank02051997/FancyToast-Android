@@ -87,6 +87,12 @@ Please fork this repository and contribute back using
 Any contributions, large or small, major features, bug fixes, are welcomed and appreciated
 but will be thoroughly reviewed .
 
+### Contact - Let's become friend
+- [Twitter](https://twitter.com/shashank020597)
+- [Github](https://github.com/Shashank02051997)
+- [Linkedin](https://www.linkedin.com/in/shashank-singhal-a87729b5/)
+- [Facebook](https://www.facebook.com/shashanksinghal02)
+
 ## License
 
 * [Apache Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
