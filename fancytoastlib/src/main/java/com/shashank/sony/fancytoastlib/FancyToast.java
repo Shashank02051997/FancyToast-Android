@@ -13,22 +13,18 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class FancyToast extends Toast {
-    /**
-     * Construct an empty Toast object.  You must call {@link #setView} before you
-     * can call {@link #show}.
-     *
-     * @param context The context to use.  Usually your {@link Application}
-     *                or {@link Activity} object.
-     */
+
     public static int SUCCESS=1;
     public static int WARNING=2;
     public static int ERROR=3;
     public static int INFO=4;
     public static int DEFAULT=5;
     public static int CONFUSING=6;
+    
     public FancyToast(Context context) {
         super(context);
     }
+
     public static Toast makeText(Context context,String message,int duration,int type,boolean androidicon){
         Toast toast = new Toast(context);
         toast.setDuration(duration);
@@ -42,29 +38,31 @@ public class FancyToast extends Toast {
         img1.setVisibility(View.VISIBLE);
         else if(androidicon==false)
         img1.setVisibility(View.GONE);
-        if(type==1)
-        { linearLayout.setBackgroundResource(R.drawable.success_shape);
-          img.setImageResource(R.drawable.ic_check_black_24dp);
-        }
-        else if (type==2)
-        { linearLayout.setBackgroundResource(R.drawable.warning_shape);
-          img.setImageResource(R.drawable.ic_pan_tool_black_24dp);
-        }
-        else if (type==3)
-        { linearLayout.setBackgroundResource(R.drawable.error_shape);
-          img.setImageResource(R.drawable.ic_clear_black_24dp);
-        }
-        else if (type==4)
-        { linearLayout.setBackgroundResource(R.drawable.info_shape);
-          img.setImageResource(R.drawable.ic_info_outline_black_24dp);
-        }
-        else if (type==5)
-        { linearLayout.setBackgroundResource(R.drawable.default_shape);
-          img.setVisibility(View.GONE);
-        }
-        else if (type==6)
-        { linearLayout.setBackgroundResource(R.drawable.confusing_shape);
-          img.setImageResource(R.drawable.ic_refresh_black_24dp);
+        switch (type) {
+            case 1:
+                linearLayout.setBackgroundResource(R.drawable.success_shape);
+                img.setImageResource(R.drawable.ic_check_black_24dp);
+                break;
+            case 2:
+                linearLayout.setBackgroundResource(R.drawable.warning_shape);
+                img.setImageResource(R.drawable.ic_pan_tool_black_24dp);
+                break;
+            case 3:
+                linearLayout.setBackgroundResource(R.drawable.error_shape);
+                img.setImageResource(R.drawable.ic_clear_black_24dp);
+                break;
+            case 4:
+                linearLayout.setBackgroundResource(R.drawable.info_shape);
+                img.setImageResource(R.drawable.ic_info_outline_black_24dp);
+                break;
+            case 5:
+                linearLayout.setBackgroundResource(R.drawable.default_shape);
+                img.setVisibility(View.GONE);
+                break;
+            case 6:
+                linearLayout.setBackgroundResource(R.drawable.confusing_shape);
+                img.setImageResource(R.drawable.ic_refresh_black_24dp);
+                break;
         }
         toast.setView(layout);
         return toast;
@@ -76,29 +74,32 @@ public class FancyToast extends Toast {
         LinearLayout linearLayout=(LinearLayout) layout.findViewById(R.id.toast_type);
         ImageView img=(ImageView) layout.findViewById(R.id.toast_icon);
         l1.setText(message);
-        if(type==1)
-        { linearLayout.setBackgroundResource(R.drawable.success_shape);
-          img.setImageResource(ImageResource);
-        }
-        else if (type==2)
-        { linearLayout.setBackgroundResource(R.drawable.warning_shape);
-          img.setImageResource(ImageResource);
-        }
-        else if (type==3)
-        { linearLayout.setBackgroundResource(R.drawable.error_shape);
-          img.setImageResource(ImageResource);
-        }
-        else if (type==4)
-        { linearLayout.setBackgroundResource(R.drawable.info_shape);
-          img.setImageResource(ImageResource);
-        }
-        else if (type==5)
-        { linearLayout.setBackgroundResource(R.drawable.default_shape);
-          img.setVisibility(View.GONE);
-        }
-        else if (type==6)
-        { linearLayout.setBackgroundResource(R.drawable.confusing_shape);
-          img.setImageResource(ImageResource);
+        img.setImageResource(ImageResource);
+        switch (type) {
+            case 1:
+                linearLayout.setBackgroundResource(R.drawable.success_shape);
+                break;
+            case 2:
+                linearLayout.setBackgroundResource(R.drawable.warning_shape);
+                break;
+            case 3:
+                linearLayout.setBackgroundResource(R.drawable.error_shape);
+                img.setImageResource(ImageResource);
+                break;
+            case 4:
+                linearLayout.setBackgroundResource(R.drawable.info_shape);
+                break;
+            case 5:
+                linearLayout.setBackgroundResource(R.drawable.default_shape);
+                img.setVisibility(View.GONE);
+                break;
+            case 6:
+                linearLayout.setBackgroundResource(R.drawable.confusing_shape);
+                break;
+            default:
+                linearLayout.setBackgroundResource(R.drawable.default_shape);
+                img.setVisibility(View.GONE);
+                break;
         }
         toast.setView(layout);
         return toast;
