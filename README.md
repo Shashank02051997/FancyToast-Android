@@ -5,6 +5,7 @@
 [![](https://jitpack.io/v/Shashank02051997/FancyToast-Android.svg)](https://jitpack.io/#Shashank02051997/FancyToast-Android)
 [![Android Arsenal]( https://img.shields.io/badge/Android%20Arsenal-FancyToast-green.svg?style=flat )]( https://android-arsenal.com/details/1/6357 )
 [![ghit.me](https://ghit.me/badge.svg?repo=Shashank02051997/FancyToast-Android)](https://ghit.me/repo/Shashank02051997/FancyToast-Android)
+[![ghit.me](https://ghit.me/badge.svg?repo=jrvansuita/MaterialAbout)](https://ghit.me/repo/jrvansuita/MaterialAbout)
 
 ## Prerequisites
 
