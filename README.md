@@ -72,6 +72,11 @@ You can also create your custom Toasts with passing your image:
 FancyToast.makeText(yourContext, "I'm a custom Toast", duration, type, yourimage).show();
 ```
 
+You can make "Toast" be single instance:
+```java
+FancyToast.setSignleInstance(true)
+```
+
 ## Screenshots
 
 **Please click the image below to enlarge.**
