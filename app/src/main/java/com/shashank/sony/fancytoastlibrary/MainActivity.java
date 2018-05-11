@@ -9,7 +9,7 @@ import android.widget.Toast;
 import com.shashank.sony.fancytoastlib.FancyToast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    Button b1,b2,b3,b4,b5,b6,b7,b8;
+    Button b1,b2,b3,b4,b5,b6,b7,b8,b9;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         b6=(Button) findViewById(R.id.button6);
         b7=(Button) findViewById(R.id.button7);
         b8=(Button) findViewById(R.id.button8);
+        b9=(Button) findViewById(R.id.button9);
         b1.setOnClickListener(this);
         b2.setOnClickListener(this);
         b3.setOnClickListener(this);
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         b6.setOnClickListener(this);
         b7.setOnClickListener(this);
         b8.setOnClickListener(this);
+        b9.setOnClickListener(this);
     }
     @Override
     public void onClick(View v)
@@ -48,5 +50,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         else if(v.getId()==R.id.button7)
         FancyToast.makeText(this,"This is Custom Toast",FancyToast.LENGTH_LONG,FancyToast.CONFUSING,R.drawable.ic_android_black_24dp).show();
         else if(v.getId()==R.id.button8)
-        FancyToast.makeText(this,"This is a Success Toast",FancyToast.LENGTH_LONG,FancyToast.SUCCESS,false).show();    }
+        FancyToast.makeText(this,"This is Custom Toast with no android icon",FancyToast.LENGTH_LONG,FancyToast.CONFUSING,R.drawable.ic_android_black_24dp, false).show();
+        else if(v.getId()==R.id.button9)
+        FancyToast.makeText(this,"This is a Success Toast",FancyToast.LENGTH_LONG,FancyToast.SUCCESS,false).show();
+    }
 }
