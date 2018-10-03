@@ -9,8 +9,8 @@
         android:background="@drawable/success_shape"
         android:paddingTop="8dp"
         android:paddingBottom="8dp"
-        android:paddingRight="24dp"
-        android:paddingLeft="16dp"
+        android:paddingEnd="24dp"
+        android:paddingStart="16dp"
         android:layout_marginTop="20dp"
         android:id="@+id/toast_type">
 
@@ -25,7 +25,7 @@
             android:id="@+id/toast_text"
             android:text="Hi My Name is Shashank Singhal."
             android:textColor="#FFFFFF"
-            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
