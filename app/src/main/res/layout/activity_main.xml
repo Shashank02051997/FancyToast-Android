@@ -68,8 +68,17 @@
         android:id="@+id/button8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button5"
-        android:layout_alignTop="@+id/button7"
+        android:layout_below="@+id/button5"
+        android:layout_marginTop="23dp"
+        android:layout_centerHorizontal="true"
+        android:text="Custom 2" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button6"
+        android:layout_alignTop="@+id/button8"
         android:text="Android" />
 
 </RelativeLayout>
