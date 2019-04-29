@@ -62,7 +62,7 @@
         android:layout_alignEnd="@+id/button"
         android:layout_below="@+id/button4"
         android:layout_marginTop="23dp"
-        android:text="Custom" />
+        android:text="Custom icon" />
 
     <Button
         android:id="@+id/button8"
@@ -71,4 +71,5 @@
         android:layout_alignStart="@+id/button5"
         android:layout_alignTop="@+id/button7"
         android:text="Android" />
+
 </RelativeLayout>
