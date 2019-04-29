@@ -70,14 +70,18 @@ FancyToast.makeText(this,"Hello World !",FancyToast.LENGTH_LONG,FancyToast.CONFU
 ```
 You can also remove the android icon on top-right corner by passing last parameter false.
 ``` java
-FancyToast.makeText(yourContext, "I'm a Toast", duration, type, boolen value).show();
+FancyToast.makeText(yourContext, "I'm a Toast", duration, type, boolean value).show();
 ```
 
-You can also create your custom Toasts with passing your image:
+You can also create your custom Toasts with passing your image with or without android icon(top-right corner):
 ``` java
-FancyToast.makeText(yourContext, "I'm a custom Toast", duration, type, yourimage).show();
+FancyToast.makeText(yourContext, "I'm a custom Toast", duration, type, yourimage, boolean value).show();
 ```
+To display the custom Toast with no android icon:
 
+``` java
+FancyToast.makeText(this, "This is Custom Toast with no android icon", FancyToast.LENGTH_LONG, FancyToast.CONFUSING, R.drawable.ic_android_black_24dp, false);
+```
 ## Screenshots
 
 **Please click the image below to enlarge.**
