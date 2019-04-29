@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
 import android.graphics.Color;
+import android.graphics.drawable.GradientDrawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
@@ -13,26 +14,32 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class FancyToast extends Toast {
+    /**
+     * Construct an empty Toast object.  You must call {@link #setView} before you
+     * can call {@link #show}.
+     *
+     * @param context The context to use.  Usually your {@link Application}
+     * or {@link Activity} object.
+     */
+    public static int SUCCESS = 1;
+    public static int WARNING = 2;
+    public static int ERROR = 3;
+    public static int INFO = 4;
+    public static int DEFAULT = 5;
+    public static int CONFUSING = 6;
 
-    public static int SUCCESS=1;
-    public static int WARNING=2;
-    public static int ERROR=3;
-    public static int INFO=4;
-    public static int DEFAULT=5;
-    public static int CONFUSING=6;
-    
     public FancyToast(Context context) {
         super(context);
     }
 
-    public static Toast makeText(Context context,String message,int duration,int type,boolean androidicon){
+    public static Toast makeText(Context context, String message, int duration, int type, boolean androidicon) {
         Toast toast = new Toast(context);
         toast.setDuration(duration);
         View layout = LayoutInflater.from(context).inflate(R.layout.fancytoast_layout, null, false);
         TextView l1 = (TextView) layout.findViewById(R.id.toast_text);
-        LinearLayout linearLayout=(LinearLayout) layout.findViewById(R.id.toast_type);
-        ImageView img=(ImageView) layout.findViewById(R.id.toast_icon);
-        ImageView img1=(ImageView) layout.findViewById(R.id.imageView4);
+        LinearLayout linearLayout = (LinearLayout) layout.findViewById(R.id.toast_type);
+        ImageView img = (ImageView) layout.findViewById(R.id.toast_icon);
+        ImageView img1 = (ImageView) layout.findViewById(R.id.imageView4);
         l1.setText(message);
         if(androidicon==true)
         img1.setVisibility(View.VISIBLE);
@@ -67,12 +74,15 @@ public class FancyToast extends Toast {
         toast.setView(layout);
         return toast;
     }
-    public static Toast makeText(Context context,String message,int duration,int type,int ImageResource){
+
+
+    public static Toast makeText(Context context,String message,int duration,int type,int ImageResource,  boolean androidIcon) {
         Toast toast = new Toast(context);
         View layout = LayoutInflater.from(context).inflate(R.layout.fancytoast_layout, null, false);
         TextView l1 = (TextView) layout.findViewById(R.id.toast_text);
         LinearLayout linearLayout=(LinearLayout) layout.findViewById(R.id.toast_type);
         ImageView img=(ImageView) layout.findViewById(R.id.toast_icon);
+        ImageView img1=(ImageView) layout.findViewById(R.id.imageView4);
         l1.setText(message);
         img.setImageResource(ImageResource);
         switch (type) {
@@ -84,7 +94,6 @@ public class FancyToast extends Toast {
                 break;
             case 3:
                 linearLayout.setBackgroundResource(R.drawable.error_shape);
-                img.setImageResource(ImageResource);
                 break;
             case 4:
                 linearLayout.setBackgroundResource(R.drawable.info_shape);
