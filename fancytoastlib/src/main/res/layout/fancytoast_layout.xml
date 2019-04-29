@@ -4,30 +4,30 @@
     android:layout_height="wrap_content">
 
     <LinearLayout
+        android:id="@+id/toast_type"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/success_shape"
-        android:paddingTop="8dp"
-        android:paddingBottom="8dp"
-        android:paddingRight="24dp"
-        android:paddingLeft="16dp"
         android:layout_marginTop="20dp"
-        android:id="@+id/toast_type">
+        android:background="@drawable/success_shape"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="8dp">
 
         <ImageView
+            android:id="@+id/toast_icon"
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:id="@+id/toast_icon"
             android:layout_gravity="center"
             android:src="@drawable/ic_info_outline_black_24dp" />
 
         <TextView
             android:id="@+id/toast_text"
-            android:text="Hi My Name is Shashank Singhal."
-            android:textColor="#FFFFFF"
-            android:layout_marginLeft="10dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Hi My Name is Shashank Singhal."
+            android:textColor="#FFFFFF" />
 
 
     </LinearLayout>
@@ -36,9 +36,9 @@
         android:id="@+id/imageView4"
         android:layout_width="28dp"
         android:layout_height="28dp"
-        android:src="@drawable/androidicon"
+        android:layout_alignEnd="@+id/toast_type"
         android:layout_alignParentTop="true"
-        android:layout_alignEnd="@+id/toast_type" />
+        android:src="@drawable/androidicon" />
 
 
 </RelativeLayout>
