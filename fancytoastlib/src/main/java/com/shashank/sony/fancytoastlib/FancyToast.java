@@ -32,7 +32,7 @@ public class FancyToast extends Toast {
         super(context);
     }
 
-    public static Toast makeText(Context context, String message, int duration, int type, boolean androidIcon) {
+    public static Toast makeText(Context context, CharSequence message, int duration, int type, boolean androidIcon) {
         Toast toast = new Toast(context);
         toast.setDuration(duration);
         View layout = LayoutInflater.from(context).inflate(R.layout.fancytoast_layout, null, false);
@@ -78,7 +78,7 @@ public class FancyToast extends Toast {
 
 
 
-    public static Toast makeText(Context context, String message, int duration, int type, int ImageResource, boolean androidIcon) {
+    public static Toast makeText(Context context, CharSequence message, int duration, int type, int ImageResource, boolean androidIcon) {
         Toast toast = new Toast(context);
         View layout = LayoutInflater.from(context).inflate(R.layout.fancytoast_layout, null, false);
         TextView l1 = (TextView) layout.findViewById(R.id.toast_text);
