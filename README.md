@@ -4,6 +4,9 @@
 [![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg?style=flat-square)](https://www.apache.org/licenses/LICENSE-2.0.html)
 [![](https://jitpack.io/v/Shashank02051997/FancyToast-Android.svg)](https://jitpack.io/#Shashank02051997/FancyToast-Android)
 [![Android Arsenal]( https://img.shields.io/badge/Android%20Arsenal-FancyToast-green.svg?style=flat )]( https://android-arsenal.com/details/1/6357 )
+<a href="https://www.linkedin.com/in/shashank-singhal-a87729b5/">
+    <img src="https://img.shields.io/badge/Support-Recommed%2FEndorse%20me%20on%20Linkedin-yellow?style=for-the-badge&logo=linkedin" alt="Recommend me on LinkedIn" /></a>
+
 
 <a href="https://play.google.com/store/apps/details?id=com.shashank.sony.fancylibrarybyshashank">
     <img alt="Get it on Google Play"
@@ -104,6 +107,10 @@ but will be thoroughly reviewed .
 - [Linkedin](https://www.linkedin.com/in/shashank-singhal-a87729b5/)
 - [Facebook](https://www.facebook.com/shashanksinghal02)
 
+<p>
+Don't forget to star ⭐ the repo it motivates me to share more open source
+</p>
+
 ## Donation
 If this project help you reduce time to develop, you can give me a cup of coffee :) 
 
@@ -114,7 +121,7 @@ If this project help you reduce time to develop, you can give me a cup of coffee
 * [Apache Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
 
 ```
-Copyright 2019 Shashank Singhal
+Copyright 2020 Shashank Singhal
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
