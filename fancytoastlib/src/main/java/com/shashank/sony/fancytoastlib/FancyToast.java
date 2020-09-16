@@ -29,19 +29,18 @@ public class FancyToast extends Toast {
         super(context);
     }
 
-    public static Toast makeText(Context context, String message, int duration, int type, boolean androidIcon) {
+    public static Toast makeText(Context context, CharSequence message, int duration, int type, boolean androidIcon) {
         Toast toast = new Toast(context);
         toast.setDuration(duration);
         View layout = LayoutInflater.from(context).inflate(R.layout.fancytoast_layout, null, false);
-        TextView l1 = (TextView) layout.findViewById(R.id.toast_text);
-        LinearLayout linearLayout = (LinearLayout) layout.findViewById(R.id.toast_type);
-        ImageView img = (ImageView) layout.findViewById(R.id.toast_icon);
-        ImageView img1 = (ImageView) layout.findViewById(R.id.imageView4);
+        TextView l1 = layout.findViewById(R.id.toast_text);
+        LinearLayout linearLayout = layout.findViewById(R.id.toast_type);
+        ImageView img = layout.findViewById(R.id.toast_icon);
+        ImageView img1 = layout.findViewById(R.id.imageView4);
         l1.setText(message);
-        if (androidIcon == true)
+        if (androidIcon)
             img1.setVisibility(View.VISIBLE);
-        else if (androidIcon == false)
-            img1.setVisibility(View.GONE);
+        else img1.setVisibility(View.GONE);
         switch (type) {
             case 1:
                 linearLayout.setBackgroundResource(R.drawable.success_shape);
@@ -75,19 +74,19 @@ public class FancyToast extends Toast {
 
 
 
-    public static Toast makeText(Context context, String message, int duration, int type, int ImageResource, boolean androidIcon) {
+    public static Toast makeText(Context context, CharSequence message, int duration, int type, int ImageResource, boolean androidIcon) {
         Toast toast = new Toast(context);
+        toast.setDuration(duration);
         View layout = LayoutInflater.from(context).inflate(R.layout.fancytoast_layout, null, false);
-        TextView l1 = (TextView) layout.findViewById(R.id.toast_text);
-        LinearLayout linearLayout = (LinearLayout) layout.findViewById(R.id.toast_type);
-        ImageView img = (ImageView) layout.findViewById(R.id.toast_icon);
-        ImageView img1 = (ImageView) layout.findViewById(R.id.imageView4);
+        TextView l1 = layout.findViewById(R.id.toast_text);
+        LinearLayout linearLayout = layout.findViewById(R.id.toast_type);
+        ImageView img = layout.findViewById(R.id.toast_icon);
+        ImageView img1 = layout.findViewById(R.id.imageView4);
         l1.setText(message);
         img.setImageResource(ImageResource);
-        if (androidIcon == true)
+        if (androidIcon)
             img1.setVisibility(View.VISIBLE);
-        else if (androidIcon == false)
-            img1.setVisibility(View.GONE);
+        else img1.setVisibility(View.GONE);
         switch (type) {
             case 1:
                 linearLayout.setBackgroundResource(R.drawable.success_shape);
