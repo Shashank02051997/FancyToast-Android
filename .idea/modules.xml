@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/FancyToastLibrary.iml" filepath="$PROJECT_DIR$/FancyToastLibrary.iml" group="FancyToastLibrary" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="FancyToastLibrary/app" />
-      <module fileurl="file://$PROJECT_DIR$/fancytoastlib/fancytoastlib.iml" filepath="$PROJECT_DIR$/fancytoastlib/fancytoastlib.iml" group="FancyToastLibrary/fancytoastlib" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FancyToast-Android.iml" filepath="$PROJECT_DIR$/.idea/modules/FancyToast-Android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FancyToast-Android.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FancyToast-Android.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fancytoastlib/FancyToast-Android.fancytoastlib.iml" filepath="$PROJECT_DIR$/.idea/modules/fancytoastlib/FancyToast-Android.fancytoastlib.iml" />
     </modules>
   </component>
 </project>
