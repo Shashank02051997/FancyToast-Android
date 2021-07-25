@@ -15,15 +15,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        b1 = (Button) findViewById(R.id.button);
-        b2 = (Button) findViewById(R.id.button2);
-        b3 = (Button) findViewById(R.id.button3);
-        b4 = (Button) findViewById(R.id.button4);
-        b5 = (Button) findViewById(R.id.button5);
-        b6 = (Button) findViewById(R.id.button6);
-        b7 = (Button) findViewById(R.id.button7);
-        b8 = (Button) findViewById(R.id.button8);
-        b9 = (Button) findViewById(R.id.button9);
+        b1 = findViewById(R.id.button);
+        b2 = findViewById(R.id.button2);
+        b3 = findViewById(R.id.button3);
+        b4 = findViewById(R.id.button4);
+        b5 = findViewById(R.id.button5);
+        b6 = findViewById(R.id.button6);
+        b7 = findViewById(R.id.button7);
+        b8 = findViewById(R.id.button8);
+        b9 = findViewById(R.id.button9);
         b1.setOnClickListener(this);
         b2.setOnClickListener(this);
         b3.setOnClickListener(this);

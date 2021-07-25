@@ -72,8 +72,6 @@ public class FancyToast extends Toast {
     }
 
 
-
-
     public static Toast makeText(Context context, CharSequence message, int duration, int type, int ImageResource, boolean androidIcon) {
         Toast toast = new Toast(context);
         toast.setDuration(duration);
