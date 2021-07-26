@@ -1,5 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.vanniktech.maven.publish'
 group = 'com.github.Shashank02051997'
 
 android {
@@ -31,4 +32,3 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
 }
 
-apply plugin: 'com.vanniktech.maven.publish'
