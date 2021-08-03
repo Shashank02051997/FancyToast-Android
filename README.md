@@ -34,7 +34,7 @@ Add this to your module's `build.gradle` file (make sure the version matches the
 ```gradle
 dependencies {
 	...
-	implementation 'io.github.Shashank02051997:FancyToast-Android:2.0.1'
+	implementation 'io.github.shashank02051997:FancyToast:2.0.1'
 }
 ```
 ## Usage
