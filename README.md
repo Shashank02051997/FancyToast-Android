@@ -22,7 +22,7 @@ Add this in your root `build.gradle` file (**not** your module `build.gradle` fi
 allprojects {
 	repositories {
 		...
-		maven { url "https://jitpack.io" }
+		mavenCentral()
 	}
 }
 ```
@@ -34,7 +34,7 @@ Add this to your module's `build.gradle` file (make sure the version matches the
 ```gradle
 dependencies {
 	...
-	implementation 'com.github.Shashank02051997:FancyToast-Android:2.0.1'
+	implementation 'io.github.Shashank02051997:FancyToast-Android:2.0.1'
 }
 ```
 ## Usage
