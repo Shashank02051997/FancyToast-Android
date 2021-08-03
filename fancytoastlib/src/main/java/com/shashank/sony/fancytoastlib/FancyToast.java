@@ -14,8 +14,8 @@ public class FancyToast extends Toast {
     /**
      * Construct an empty Toast object.  You must call {@link #setView} before you
      * can call {@link #show}.
-     *
-     * @param context The context to use.  Usually your {@link Application}
+     * <p>
+     * context The context to use.  Usually your {@link Application}
      * or {@link Activity} object.
      */
     public static int SUCCESS = 1;
@@ -98,10 +98,11 @@ public class FancyToast extends Toast {
             case 4:
                 linearLayout.setBackgroundResource(R.drawable.info_shape);
                 break;
-            case 5:
+            case 5: {
                 linearLayout.setBackgroundResource(R.drawable.default_shape);
                 img.setVisibility(View.GONE);
                 break;
+            }
             case 6:
                 linearLayout.setBackgroundResource(R.drawable.confusing_shape);
                 break;

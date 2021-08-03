@@ -3,6 +3,14 @@ apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.vanniktech.maven.publish'
 group = 'com.github.Shashank02051997'
 
+allprojects {
+    plugins.withId("com.vanniktech.maven.publish") {
+        mavenPublish {
+            sonatypeHost = "S01"
+        }
+    }
+}
+
 android {
     compileSdkVersion 30
 
