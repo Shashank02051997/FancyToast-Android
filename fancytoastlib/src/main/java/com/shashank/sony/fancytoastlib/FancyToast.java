@@ -15,7 +15,7 @@ public class FancyToast extends Toast {
      * Construct an empty Toast object.  You must call {@link #setView} before you
      * can call {@link #show}.
      * <p>
-     * context The context to use.  Usually your {@link Application}
+     * @param context The context to use.  Usually your {@link Application}
      * or {@link Activity} object.
      */
     public static int SUCCESS = 1;
