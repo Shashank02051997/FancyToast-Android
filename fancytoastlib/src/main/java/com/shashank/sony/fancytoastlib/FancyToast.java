@@ -9,8 +9,29 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+import androidx.annotation.IntDef;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
 
 public class FancyToast extends Toast {
+    
+    @Retention(RetentionPolicy.SOURCE)
+    @IntDef({SUCCESS, WARNING, ERROR, INFO, DEFAULT, CONFUSING})
+    public @interface LayoutType {}
+    public static final int SUCCESS = 1;
+    public static final int WARNING = 2;
+    public static final int ERROR = 3;
+    public static final int INFO = 4;
+    public static final int DEFAULT = 5;
+    public static final int CONFUSING = 6;
+
+
+    @IntDef({ LENGTH_SHORT, LENGTH_LONG })
+    @Retention(RetentionPolicy.SOURCE)
+    public @interface Duration {}
+    public static final int LENGTH_SHORT = Toast.LENGTH_SHORT;
+    public static final int LENGTH_LONG = Toast.LENGTH_LONG;
+
     /**
      * Construct an empty Toast object.  You must call {@link #setView} before you
      * can call {@link #show}.
@@ -19,18 +40,11 @@ public class FancyToast extends Toast {
      * @param context The context to use.  Usually your {@link Application}
      * or {@link Activity} object.
      */
-    public static int SUCCESS = 1;
-    public static int WARNING = 2;
-    public static int ERROR = 3;
-    public static int INFO = 4;
-    public static int DEFAULT = 5;
-    public static int CONFUSING = 6;
-
     public FancyToast(Context context) {
         super(context);
     }
 
-    public static Toast makeText(Context context, CharSequence message, int duration, int type, boolean androidIcon) {
+    public static Toast makeText(Context context, CharSequence message, @Duration int duration, @LayoutType int type, boolean androidIcon) {
         Toast toast = new Toast(context);
         toast.setDuration(duration);
         View layout = LayoutInflater.from(context).inflate(R.layout.fancytoast_layout, null, false);
@@ -73,7 +87,7 @@ public class FancyToast extends Toast {
     }
 
 
-    public static Toast makeText(Context context, CharSequence message, int duration, int type, int ImageResource, boolean androidIcon) {
+    public static Toast makeText(Context context, CharSequence message, @Duration int duration, @LayoutType int type, int ImageResource, boolean androidIcon) {
         Toast toast = new Toast(context);
         toast.setDuration(duration);
         View layout = LayoutInflater.from(context).inflate(R.layout.fancytoast_layout, null, false);
