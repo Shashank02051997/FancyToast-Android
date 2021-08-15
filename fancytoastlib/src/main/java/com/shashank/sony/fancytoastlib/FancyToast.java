@@ -57,27 +57,27 @@ public class FancyToast extends Toast {
             img1.setVisibility(View.VISIBLE);
         else img1.setVisibility(View.GONE);
         switch (type) {
-            case 1:
+            case SUCCESS:
                 linearLayout.setBackgroundResource(R.drawable.success_shape);
                 img.setImageResource(R.drawable.ic_check_black_24dp);
                 break;
-            case 2:
+            case WARNING:
                 linearLayout.setBackgroundResource(R.drawable.warning_shape);
                 img.setImageResource(R.drawable.ic_pan_tool_black_24dp);
                 break;
-            case 3:
+            case ERROR:
                 linearLayout.setBackgroundResource(R.drawable.error_shape);
                 img.setImageResource(R.drawable.ic_clear_black_24dp);
                 break;
-            case 4:
+            case INFO:
                 linearLayout.setBackgroundResource(R.drawable.info_shape);
                 img.setImageResource(R.drawable.ic_info_outline_black_24dp);
                 break;
-            case 5:
+            case DEFAULT:
                 linearLayout.setBackgroundResource(R.drawable.default_shape);
                 img.setVisibility(View.GONE);
                 break;
-            case 6:
+            case CONFUSING:
                 linearLayout.setBackgroundResource(R.drawable.confusing_shape);
                 img.setImageResource(R.drawable.ic_refresh_black_24dp);
                 break;
@@ -101,24 +101,24 @@ public class FancyToast extends Toast {
             img1.setVisibility(View.VISIBLE);
         else img1.setVisibility(View.GONE);
         switch (type) {
-            case 1:
+            case SUCCESS:
                 linearLayout.setBackgroundResource(R.drawable.success_shape);
                 break;
-            case 2:
+            case WARNING:
                 linearLayout.setBackgroundResource(R.drawable.warning_shape);
                 break;
-            case 3:
+            case ERROR:
                 linearLayout.setBackgroundResource(R.drawable.error_shape);
                 break;
-            case 4:
+            case INFO:
                 linearLayout.setBackgroundResource(R.drawable.info_shape);
                 break;
-            case 5: {
+            case DEFAULT: {
                 linearLayout.setBackgroundResource(R.drawable.default_shape);
                 img.setVisibility(View.GONE);
                 break;
             }
-            case 6:
+            case CONFUSING:
                 linearLayout.setBackgroundResource(R.drawable.confusing_shape);
                 break;
             default:
