@@ -41,7 +41,6 @@
         android:layout_height="28dp"
         android:layout_alignEnd="@+id/toast_type"
         android:layout_alignParentTop="true"
-        android:src="@drawable/androidicon"
         android:layout_alignRight="@+id/toast_type" />
 
 

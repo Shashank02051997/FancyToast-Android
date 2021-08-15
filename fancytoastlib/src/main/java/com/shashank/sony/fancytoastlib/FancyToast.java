@@ -3,6 +3,8 @@ package com.shashank.sony.fancytoastlib;
 import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
+import android.content.pm.PackageManager;
+import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
@@ -53,9 +55,10 @@ public class FancyToast extends Toast {
         ImageView img = layout.findViewById(R.id.toast_icon);
         ImageView img1 = layout.findViewById(R.id.imageView4);
         l1.setText(message);
-        if (androidIcon)
+        if (androidIcon) {
+            drawAppIcon(img1);
             img1.setVisibility(View.VISIBLE);
-        else img1.setVisibility(View.GONE);
+        } else img1.setVisibility(View.GONE);
         switch (type) {
             case 1:
                 linearLayout.setBackgroundResource(R.drawable.success_shape);
@@ -97,9 +100,10 @@ public class FancyToast extends Toast {
         ImageView img1 = layout.findViewById(R.id.imageView4);
         l1.setText(message);
         img.setImageResource(ImageResource);
-        if (androidIcon)
+        if (androidIcon) {
+            drawAppIcon(img1);
             img1.setVisibility(View.VISIBLE);
-        else img1.setVisibility(View.GONE);
+        } else img1.setVisibility(View.GONE);
         switch (type) {
             case 1:
                 linearLayout.setBackgroundResource(R.drawable.success_shape);
@@ -130,4 +134,13 @@ public class FancyToast extends Toast {
         return toast;
     }
 
+
+    private static void drawAppIcon(ImageView iv) {
+        Context context = iv.getContext();
+        try {
+            Drawable icon = context.getPackageManager().getApplicationIcon(context.getPackageName());
+            iv.setImageDrawable(icon);
+        } catch (PackageManager.NameNotFoundException ignore) {
+        }
+    }
 }
