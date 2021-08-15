@@ -9,7 +9,11 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.DrawableRes;
 import androidx.annotation.IntDef;
+import androidx.annotation.NonNull;
+
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
@@ -40,11 +44,11 @@ public class FancyToast extends Toast {
      * @param context The context to use.  Usually your {@link Application}
      * or {@link Activity} object.
      */
-    public FancyToast(Context context) {
+    public FancyToast(@NonNull Context context) {
         super(context);
     }
 
-    public static Toast makeText(Context context, CharSequence message, @Duration int duration, @LayoutType int type, boolean androidIcon) {
+    public static Toast makeText(@NonNull Context context, CharSequence message, @Duration int duration, @LayoutType int type, boolean androidIcon) {
         Toast toast = new Toast(context);
         toast.setDuration(duration);
         View layout = LayoutInflater.from(context).inflate(R.layout.fancytoast_layout, null, false);
@@ -87,7 +91,7 @@ public class FancyToast extends Toast {
     }
 
 
-    public static Toast makeText(Context context, CharSequence message, @Duration int duration, @LayoutType int type, int ImageResource, boolean androidIcon) {
+    public static Toast makeText(@NonNull Context context, CharSequence message, @Duration int duration, @LayoutType int type, @DrawableRes int ImageResource, boolean androidIcon) {
         Toast toast = new Toast(context);
         toast.setDuration(duration);
         View layout = LayoutInflater.from(context).inflate(R.layout.fancytoast_layout, null, false);
