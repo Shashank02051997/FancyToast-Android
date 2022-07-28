@@ -29,6 +29,8 @@ allprojects {
 
 ## Dependency
 
+This library is available on [MavenCentreal](https://search.maven.org/artifact/io.github.shashank02051997/FancyToast/)
+
 Add this to your module's `build.gradle` file (make sure the version matches the Maven-Central badge above):
 
 ```gradle
