@@ -29,12 +29,12 @@ allprojects {
 
 ## Dependency
 
-Add this to your module's `build.gradle` file (make sure the version matches the JitPack badge above):
+Add this to your module's `build.gradle` file (make sure the version matches the Maven-Central badge above):
 
 ```gradle
 dependencies {
 	...
-	implementation 'io.github.shashank02051997:FancyToast:2.0.1'
+	implementation 'io.github.shashank02051997:FancyToast:2.0.2'
 }
 ```
 ## Usage

@@ -4,7 +4,13 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/FancyToast-Android.iml" filepath="$PROJECT_DIR$/.idea/modules/FancyToast-Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FancyToast-Android.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FancyToast-Android.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FancyToast-Android.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FancyToast-Android.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FancyToast-Android.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FancyToast-Android.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FancyToast-Android.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FancyToast-Android.app.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/fancytoastlib/FancyToast-Android.fancytoastlib.iml" filepath="$PROJECT_DIR$/.idea/modules/fancytoastlib/FancyToast-Android.fancytoastlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fancytoastlib/FancyToast-Android.fancytoastlib.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/fancytoastlib/FancyToast-Android.fancytoastlib.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fancytoastlib/FancyToast-Android.fancytoastlib.main.iml" filepath="$PROJECT_DIR$/.idea/modules/fancytoastlib/FancyToast-Android.fancytoastlib.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fancytoastlib/FancyToast-Android.fancytoastlib.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/fancytoastlib/FancyToast-Android.fancytoastlib.unitTest.iml" />
     </modules>
   </component>
 </project>
