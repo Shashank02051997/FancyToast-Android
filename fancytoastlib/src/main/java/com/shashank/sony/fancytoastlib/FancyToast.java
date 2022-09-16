@@ -18,10 +18,12 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
 public class FancyToast extends Toast {
-    
+
     @Retention(RetentionPolicy.SOURCE)
     @IntDef({SUCCESS, WARNING, ERROR, INFO, DEFAULT, CONFUSING})
-    public @interface LayoutType {}
+    public @interface LayoutType {
+    }
+
     public static final int SUCCESS = 1;
     public static final int WARNING = 2;
     public static final int ERROR = 3;
@@ -30,9 +32,11 @@ public class FancyToast extends Toast {
     public static final int CONFUSING = 6;
 
 
-    @IntDef({ LENGTH_SHORT, LENGTH_LONG })
+    @IntDef({LENGTH_SHORT, LENGTH_LONG})
     @Retention(RetentionPolicy.SOURCE)
-    public @interface Duration {}
+    public @interface Duration {
+    }
+
     public static final int LENGTH_SHORT = Toast.LENGTH_SHORT;
     public static final int LENGTH_LONG = Toast.LENGTH_LONG;
 
@@ -42,7 +46,7 @@ public class FancyToast extends Toast {
      * <p>
      *
      * @param context The context to use.  Usually your {@link Application}
-     * or {@link Activity} object.
+     *                or {@link Activity} object.
      */
     public FancyToast(@NonNull Context context) {
         super(context);
@@ -117,14 +121,10 @@ public class FancyToast extends Toast {
             case INFO:
                 linearLayout.setBackgroundResource(R.drawable.info_shape);
                 break;
-            case DEFAULT: {
-                linearLayout.setBackgroundResource(R.drawable.default_shape);
-                img.setVisibility(View.GONE);
-                break;
-            }
             case CONFUSING:
                 linearLayout.setBackgroundResource(R.drawable.confusing_shape);
                 break;
+            case DEFAULT:
             default:
                 linearLayout.setBackgroundResource(R.drawable.default_shape);
                 img.setVisibility(View.GONE);
